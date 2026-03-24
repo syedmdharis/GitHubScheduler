@@ -5,6 +5,9 @@ on:
 jobs:
   run-code:
     runs-on: ubuntu-latest
+    env:
+      MY_SECRET: ${{ secrets.PWD }}      # From secrets
+      MY_VAR: ${{ vars.EID }}            # From variables
     steps:
       - name: Checkout code
         uses: actions/checkout@v4   

@@ -1,0 +1,19 @@
+# Email Scheduler Configuration
+email:
+  subject: "Scheduled Email Notification"
+  body: "This is your scheduled email notification."
+
+# Intervals for sending emails (in seconds)
+# 3 times a day: e.g., 9:00 AM, 1:00 PM, 5:00 PM
+# You can define specific times or intervals
+scheduling:
+  # Cron format: hour:minute for specific times (3 times a day)
+  times:
+    - "09:00"  # 9:00 AM
+    - "13:00"  # 1:00 PM
+    - "17:00"  # 5:00 PM
+  
+  # Alternative: Use interval-based scheduling (in seconds)
+  # For example, every 8 hours = 28800 seconds
+  # Uncomment below to use interval instead of cron times
+  # interval_seconds: 28800

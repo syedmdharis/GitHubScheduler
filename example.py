@@ -69,7 +69,7 @@ def verify_environment():
     print("Example 4: Verifying environment variables")
     print("=" * 50)
     
-    required_vars = ['GITHUB_EMAIL', 'GITHUB_EMAIL_PASSWORD']
+    required_vars = ['EMAIL', 'PWD']
     missing_vars = []
     
     for var in required_vars:

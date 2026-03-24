@@ -69,7 +69,7 @@ def verify_environment():
     print("Example 4: Verifying environment variables")
     print("=" * 50)
     
-    required_vars = ['EMAILID', 'PWD']
+    required_vars = ['EID', 'PWD']
     missing_vars = []
     
     for var in required_vars:

@@ -5,6 +5,7 @@ on:
 jobs:
   run-code:
     runs-on: ubuntu-latest
+    environment: MyTest
     env:
       PWD: ${{ secrets.PWD }}      # From secrets
       EID: ${{ vars.EID }}         # From variables

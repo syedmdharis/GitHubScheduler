@@ -76,7 +76,7 @@ def verify_environment():
         if var in os.environ:
             value = os.environ[var]
             # Mask the password for security
-            if 'PASSWORD' in var:
+            if 'PWD' in var:
                 display_value = '*' * len(value)
             else:
                 display_value = value
